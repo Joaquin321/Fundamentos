@@ -1,0 +1,28 @@
+// EcuacionCuadratica.cpp 
+
+#include "stdafx.h"
+#include "math.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std; 
+
+
+void main ()
+{
+	float a,b,c,x1,x2; 
+
+	cout<< "Ingresar A"<<endl;
+	cin>> a;
+	cout<< "Ingresar B "<<endl;
+	cin>> b;
+	cout<< "Ingresar C "<<endl;
+	cin>> c;
+	x1= (-b+sqrt(b*b-4*a*c))/2*a; 
+	x2= (-b-sqrt(b*b-4*a*c))/2*a;
+
+	cout<< "El valor de X1 es: "<<x1<<endl;
+	cout<< "El valor de X2 es: "<<x2;
+
+	getch();
+}
