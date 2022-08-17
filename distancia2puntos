@@ -1,0 +1,26 @@
+// DIstancia2puntos.cpp 
+
+#include "stdafx.h"
+#include "math.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std; 
+
+
+void main ()
+{
+	float x1,y1,x2,y2,d; 
+
+	cout<< "Ingrese x1, y1: "<<endl;
+	cin>> x1;
+	cin>>y1;
+	cout<< "Ingresar x2,y2: "<<endl;
+	cin>> x2;
+	cin>>y2;
+	d= sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+	cout<< "La distancia es: "<<d;
+	
+	getch();
+}
+
