@@ -1,0 +1,32 @@
+
+using namespace std;
+
+void main()
+{
+	float n1,n2,n3,prom,dif,may,men;
+	cout<<"Ingresar el numero: ";
+	cin>>n1;
+	cout<<"Ingresar el numero: ";
+	cin>>n2;
+	cout<<"Ingresar el numero: ";
+	cin>>n3;
+	may=n1;
+	men=n1;
+
+	if (may<n2)
+		may=n2;
+	if (men>n2)
+		men=n2;
+	if (may<n3)
+		may=n3;
+	if (men>n3)
+		men=n3;
+	dif= may-men;
+	prom= (n1+n2+n3)/3;
+	cout<<"La diferencia es: "<<dif<<endl;
+	cout<<"EL promedio es: "<<prom;
+
+	getch();
+
+
+}
