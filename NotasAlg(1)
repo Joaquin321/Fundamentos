@@ -1,0 +1,58 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	float prom,par1,par2,par3,fin1,fin2,fin3,proy1,proy2,proy3,promp1,promp2,promp3,menor,mayor,est1,est2,est3,prom1,prom2,prom3;
+	cout<<"Ingresando notas del primero estudiante: "<<endl;
+	cout<<"	Parcial 1: ";
+	cin>>par1;
+	cout<<"	Parcial 2: ";
+	cin>>par2;
+	cout<<"	Parcial 3: ";
+	cin>>par3;
+	cout<<"	Examen final: ";
+	cin>>fin1;
+	cout<<"	Proyecto final: "; 
+	cin>>proy1;
+	promp1=(par1+par2+par3)/3;
+	prom1=(promp1+fin1+proy1)/3;
+	cout<<"Nota final de estudiante 1 es: "<<prom1<<endl<<endl;
+
+	cout<<"Ingresando notas del segundo estudiante: "<<endl;
+	cout<<"	Parcial 1: ";
+	cin>>par1;
+	cout<<"	Parcial 2: ";
+	cin>>par2;
+	cout<<"	Parcial 3: ";
+	cin>>par3;
+	cout<<"	Examen final: ";
+	cin>>fin2;
+	cout<<"	Proyecto final: "; 
+	cin>>proy2;
+	promp2=(par1+par2+par3)/3;
+	prom2=(promp2+fin2+proy2)/3;
+	cout<<"Nota final de estudiante 2 es: "<<prom2<<endl<<endl;
+
+	cout<<"Ingresando notas del segundo estudiante: "<<endl;
+	cout<<"	Parcial 1: ";
+	cin>>par1;
+	cout<<"	Parcial 2: ";
+	cin>>par2;
+	cout<<"	Parcial 3: ";
+	cin>>par3;
+	cout<<"	Examen final: ";
+	cin>>fin3;
+	cout<<"	Proyecto final: "; 
+	cin>>proy3;
+	promp3=(par1+par2+par3)/3;
+	prom3=(promp3+fin3+proy3)/3;
+	cout<<"Nota final de estudiante 3 es: "<<prom3<<endl<<endl;
+
+	prom=(prom1+prom2+prom3)/3;
+	cout<<"El promedio general es: "<<prom;
+	getch();
+}
