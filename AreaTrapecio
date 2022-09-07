@@ -1,0 +1,25 @@
+// Repaso.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+
+{
+	float b,B,h,A;
+	cout<<"Introduzca b: ";
+	cin>>b;
+	cout<<"Introduzca B: ";
+	cin>>B;
+	cout<<"Introduzca h: ";
+	cin>>h;
+	A=(((b+B)/2)*h);
+	cout<<"El area es: "<<A;
+	
+	getch();
+	return (0);
+}
+
