@@ -1,0 +1,57 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "Math.h"
+#include "ctype.h"
+#include "stdlib.h"
+using namespace std;
+
+void main()
+{
+	char C,c,D,d,E,e,F,f,G,g,A,a,B,b, nota;
+  do { 
+  cout<<"\t"<<"Menu"<<endl<<"\t"<<"===="<<endl;
+	cout<<"C.- Do"<<endl;
+	cout<<"D.- Re"<<endl;
+	cout<<"E.- Mi"<<endl;
+	cout<<"F.- Fa"<<endl;
+	cout<<"G.- Sol"<<endl;
+	cout<<"A.- La"<<endl;
+	cout<<"B.- Si"<<endl;
+	cout<<"0.- Salir"<<endl;
+	cout<<"Elija una opcion: ";
+	cin>>nota;
+	nota= toupper(nota);
+     switch (nota) {
+		 
+	 case('C'):
+			cout<<"Impimiendo Do..."<<endl;
+				break;
+	 case('D'): 
+			cout<<"Imprimiendo Re..."<<endl;			
+				break;
+	 case('E'):
+			cout<<"Imprimiendo Mi..."<<endl;
+				break;
+	 case('F'):
+			cout<<"Imprimiendo Fa..."<<endl;		 
+				break;
+	 case('G'):
+			cout<<"Imprimiendo Sol..."<<endl;
+				break;
+	 case('A'):
+			cout<<"Imprimiendo La..."<<endl;
+				break;
+	 case('B'):
+			cout<<"IMprimiendo Si..."<<endl;
+				break;
+
+		case '0': cout << "Salir";break;
+	  default: cout << "Opcion invalida" << endl; 
+     }
+    getch(); 
+    system ("cls");
+   } 
+  while (nota != '0');
+   getch();
+}
