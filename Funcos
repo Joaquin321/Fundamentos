@@ -1,0 +1,29 @@
+// funcion.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+//DEclarar el prototipo de la funcion 
+float funcos (float x);
+
+
+void main()
+
+{
+	float pollito;
+	cout<<"Ingrese el valor: ";
+	cin>>pollito;
+	cout<<"El resultado de la funcion es: "<<funcos(pollito);
+	getch();
+
+}
+//Declarar la funcion
+float funcos(float x) 
+{
+	float aux;
+	aux=3*cos(x)-1;
+	return aux;
+}
