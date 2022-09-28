@@ -1,0 +1,40 @@
+// funcion.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+//DEclarar el prototipo de la funcion 
+bool funoct (int numero);
+
+
+void main()
+{
+	int num;
+	cout<<"Ingrese el numero: ";
+	cin>>num;
+	if (funoct(num)==true)
+		cout<<"No esta en base 8";
+	else 
+		cout<<"Si esta en base 8";
+	getch();
+
+}
+//Declarar la funcion
+bool funoct(int numero) 
+{
+	int d;
+	bool band=false; 
+	while (numero>0){
+		d=numero%10;
+		numero=numero/10;
+		if ((d<0)||(d>=8)){
+			band=true;
+			break;
+		}
+	}
+	return band;
+
+}
