@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+
+bool primono(int a);
+
+int main()
+{
+	int i=2,k,num;
+	cout<<"Ingrese la cantidad de numeros: ";
+	cin>>num;
+	k=0;
+	cout<<"los"<<num<<"numeros primos son: "<<endl;
+	while (k<num)
+	{
+		if (primono(i)==true)
+		{
+			cout<<i<<",";
+			k++;
+		}
+		i++;
+	}
+getch();
+}
+	
+bool primono(int a)
+{
+	bool aux=true;
+	for(int i=2;i<=a-1;i++)
+		if(a%i==0)
+		{
+			aux=false;
+			break;
+		}
+	return aux;
+}
